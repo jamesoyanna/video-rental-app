@@ -1,6 +1,9 @@
-const first = [ 1,2,3,4]
-const second = [5,6,7,8]
+import Teacher from './Teacher';
 
-const combined = first.concat(second);
+//const person = new Person('Mosh');
 
-console.log(combined);
+
+
+const teacher = new Teacher('mosh', 'MSC')
+teacher.teach();
+
