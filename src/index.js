@@ -1,10 +1,6 @@
-const person = {
-    name: "james",
-    walk: function() {
-console.log(this);
-    }
+const first = [ 1,2,3,4]
+const second = [5,6,7,8]
 
-}
-person.walk();
-const walk = person.walk.bind(person);
-walk()
+const combined = first.concat(second);
+
+console.log(combined);
