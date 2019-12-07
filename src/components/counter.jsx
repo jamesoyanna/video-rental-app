@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 export class Counter extends Component {
     state = {
-        count:1,
+        count:1
 
     }
     // constructor(){
@@ -11,7 +11,7 @@ export class Counter extends Component {
     //     this.handleIncrement = this.handleIncrement.bind(this)
     // }
  handleIncrement = ()=>{
-     console.log("Increment", this);
+   this.setState({count:this.state.count +1})
  }
     
     render() {
