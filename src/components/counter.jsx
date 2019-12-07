@@ -3,14 +3,16 @@ import React, { Component } from 'react';
 
 export class Counter extends Component {
     state = {
-        count:1
+        count:1,
+        imgUrl: "https://media.gettyimages.com/photos/tokyo-skyscrapper-at-night-picture-id1165888881?s=612x612"
     }
     render() {
         return (
-            <React.Fragment>
+            <div>
+                <img src={this.state.imgUrl} alt=""/>
                 <span>{this.formatCount()}</span>
     <button className="btn">Increment</button>
-            </React.Fragment>
+            </div>
         );
     }
    formatCount(){
