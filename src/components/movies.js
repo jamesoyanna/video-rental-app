@@ -12,7 +12,12 @@ handleDelete = movie=>{
 }
 
     render() { 
+      const {length:count} = this.state.movies;
+      if (count === 0) return <p>There are no movies on the database</p>;
+
         return (
+          <React.Fragment>
+          <p>Showing {count} number of movies in the database </p>
           <table className="table">
             <thead>
               <tr>
@@ -37,6 +42,7 @@ handleDelete = movie=>{
               ))}
             </tbody>
           </table>
+          </React.Fragment>
         );
                                                                  
     }
